@@ -1,0 +1,24 @@
+<ion-view title="Add New" id="page2">
+    <ion-content padding="true" class="has-header">
+        <form id="addNew-form1" class="list">
+            <label class="item item-input" id="addNew-input1">
+                <span class="input-label">Property Name</span>
+                <input type="text" placeholder="i.e Kondominium Kajang" ng-model="$parent.name">
+            </label>
+            <label class="item item-input" id="addNew-input2">
+                <span class="input-label">Price (RM)</span>
+                <input type="text" placeholder="i.e 500,000" ng-model="$parent.price">
+            </label>
+            <label class="item item-input" id="addNew-input3">
+                <span class="input-label">Coordinate</span>
+                <input type="text" placeholder="" ng-model="$parent.latlong">
+            </label>
+            <button ng-click="takePicture()" id="addNew-button2" class="button button-stable  button-block icon-left ion-android-camera">Take Picture</button>
+        </form>
+        <div>
+            <img id="myImage" src="img/IT6TtV3zS1uFoorgAKYP_house-from-premier-builders-in-carthage-mo-64836--home-builders-5.png" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+        <button id="addNew-button3" class="button button-positive  button-block" 
+                ng-click="saveProperty()">Submit</button>
+    </ion-content>
+</ion-view>

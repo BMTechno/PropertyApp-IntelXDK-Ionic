@@ -1,0 +1,15 @@
+<ion-view title="Property Listing" id="page1">
+    <ion-content padding="true" class="has-header">
+        <ion-list id="propertyListing-list1" class="manual-list-fullwidth" 
+                  ng-repeat="property in properties track by property.id">
+            <ion-item class="item-thumbnail-left item-icon-right" id="propertyListing-list-item1" 
+                      ui-sref="propertyDetails({id:property.id})">
+                <img src="data:image/jpeg;base64,{{property.image}}">
+                <h2>{{property.name}}</h2>
+                <p>RM{{property.price}}</p>
+                <i class="icon ion-ios-arrow-forward"></i>
+            </ion-item>
+        </ion-list>
+        <a ui-sref="addNew" id="propertyListing-button1" class="button button-stable  button-block">Add New Property</a>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,24 @@
+<ion-view title="Property Details" id="page3">
+    <ion-content padding="true" class="has-header">
+        <div class="list card" id="propertyDetails-card22">
+            <ion-item id="propertyDetails-list-item3">{{property.name}}</ion-item>
+            <div class=" item item-image">
+                <img src="data:image/jpeg;base64,{{property.image}}" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="item item-body" id="propertyDetails-list-item-container2">
+                <div id="propertyDetails-null" style="margin-top:0px;color:#000000;">
+                    <p>
+                        <strong>RM{{property.price}}</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="spacer" style="width: 300px; height: 18px;"></div>
+        <ion-list id="propertyDetails-list3">
+            <ion-item class="item-divider" id="propertyDetails-list-item-divider4">Location</ion-item>
+        </ion-list>
+        
+        <div id="map" class="creator-container"></div>
+        <div class="spacer" style="width: 300px; height: 20px;"></div>
+    </ion-content>
+</ion-view>
